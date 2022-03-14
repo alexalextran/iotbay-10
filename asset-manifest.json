@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alexalextran/iotbay-10/static/css/main.36581d30.css",
-    "main.js": "/alexalextran/iotbay-10/static/js/main.96c29be6.js",
-    "static/js/787.e2bab7a1.chunk.js": "/alexalextran/iotbay-10/static/js/787.e2bab7a1.chunk.js",
-    "index.html": "/alexalextran/iotbay-10/index.html",
-    "main.36581d30.css.map": "/alexalextran/iotbay-10/static/css/main.36581d30.css.map",
-    "main.96c29be6.js.map": "/alexalextran/iotbay-10/static/js/main.96c29be6.js.map",
-    "787.e2bab7a1.chunk.js.map": "/alexalextran/iotbay-10/static/js/787.e2bab7a1.chunk.js.map"
+    "main.css": "/iotbay-10/static/css/main.36581d30.css",
+    "main.js": "/iotbay-10/static/js/main.d5cdfde4.js",
+    "static/js/787.e2bab7a1.chunk.js": "/iotbay-10/static/js/787.e2bab7a1.chunk.js",
+    "index.html": "/iotbay-10/index.html",
+    "main.36581d30.css.map": "/iotbay-10/static/css/main.36581d30.css.map",
+    "main.d5cdfde4.js.map": "/iotbay-10/static/js/main.d5cdfde4.js.map",
+    "787.e2bab7a1.chunk.js.map": "/iotbay-10/static/js/787.e2bab7a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36581d30.css",
-    "static/js/main.96c29be6.js"
+    "static/js/main.d5cdfde4.js"
   ]
 }
