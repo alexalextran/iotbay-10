@@ -1,0 +1,77 @@
+$backgroundColor: rgb(20,20,20);
+$card: rgb(30,30,30);
+$mainTextColor: rgb(221,221,221);
+$star: rgb(210,161,0);
+$red: rgb(229, 9, 20);
+$gray: rgb(77,77,77);
+
+$font-stack: 'Source Sans Pro', sans-serif;
+
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flexCustom ($jc, $ai, $fd ) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin absolutefill{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@mixin absolutecenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin invisible{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+@mixin visible{
+    opacity: 1;
+    visibility: visible;
+    z-index: 4;
+}
+
+
+@mixin landingpagetext{
+    font-weight: 700;
+    font-size: 0.6em;
+    padding: 0.6vw 2.6vw;
+    border-radius: 0.2em;
+    outline: none;
+    border: none;
+    
+}
+
+@mixin input{
+    outline: none;
+    border: none;
+    border-radius: 0.4em;
+}
+
+@mixin clickable{
+    cursor: pointer;
+    transition: 300ms all;
+    
+
+    & :hover{
+        transform: scale(1.1);
+    }
+}

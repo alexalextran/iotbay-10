@@ -1,0 +1,72 @@
+@import "./variables&functions";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+html {
+  background-color: $backgroundColor;
+  color: $mainTextColor;
+  font-family: $font-stack;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav-colored { background-color:rgb(0, 0, 0); }
+.nav-transparent { background-color:transparent;}
+
+
+    #search__button{
+          position: absolute;
+          z-index: 2;
+          right: 1.6%;
+          cursor: pointer;
+        }
+      
+      
+
+      .signup{
+        width: 100%;
+        height: 98.2vh;
+        background-size: cover;
+      
+      }
+  
+      .signupcard{
+        @include absolutecenter;
+        @include flexCustom(start, center, column);
+        width: clamp(400px, 30vw, 600px);
+        height:68vh;
+        background-color: rgba(0,0,0,0.7);
+        form{
+          h1{
+            font-size: 2.5em
+          }
+          @include flexCenter(column);
+          width: 100%;
+          padding: 10% 13%;
+          input{
+            background-color: $gray;
+            width: 100%;
+            padding: 1.4em 2em;
+            margin-bottom: 2em;
+            @include input;
+            color: white;
+            &::placeholder {
+              color: rgb(180, 159, 159);
+            }
+            
+          }
+          button{
+            @include input;
+            width: 100%;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            color: white;
+            background-color: $red;
+            cursor: pointer;
+          }
+        }
+        #signin__redirect{
+          cursor: pointer;
+          font-weight: bold;
+        }
+    }
