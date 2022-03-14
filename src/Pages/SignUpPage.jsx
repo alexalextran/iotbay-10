@@ -1,16 +1,37 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Signuppage = () => {
+import { useAuth } from '../Contexts/AuthContext';
+
+
+const SignUpPage = () => {
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const { signup, currentUser } = useAuth()
+    const [loading, setloading] = useState(false);
+
+    async function handleSubmit(e){
+        e.preventDefault()
+
+        try{
+            setloading(true)
+         await signup(emailRef.current.value, passwordRef.current.value) 
+        } catch{
+            window.alert("Failed To Create An Account!")
+        }
+        setloading(false)
+        
+    }
+   
     return (
-        <section className='signup'>
+     <section className='signup' >
     
         <div className='signupcard'>
-        <form >
+        <form onSubmit={handleSubmit}>
         <h1>SignUp</h1>
-        <input placeholder='Email' required ></input>
-        <input placeholder='Password Minimum 6 characters' required></input>
-        <button >SignUp</button>
+        <input placeholder='Email' required ref={emailRef}></input>
+        <input placeholder='Password Minimum 6 characters' required ref={passwordRef}></input>
+        <button disabled={loading}>SignUp</button>
         </form>
 
         <p>Already Have An Account? <Link to="/login"><a id='signin__redirect'>Sign In here</a></Link></p>
@@ -20,4 +41,4 @@ const Signuppage = () => {
     );
 }
 
-export default Signuppage;
+export default SignUpPage;
