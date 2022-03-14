@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { useAuth } from "../Contexts/AuthContext";
 
 
+
 const Homepage = () => {
+
+    const { currentUser } = useAuth()
 
     const { logout } = useAuth()
     const navigate = useNavigate()
@@ -21,8 +24,8 @@ const Homepage = () => {
 
     return (
         <div>
-        <p> <Link to="/signup"><a id='signin__redirect'>Signin</a></Link></p>
-        <p> <Link to="/login"><a id='signin__redirect'>Signin</a></Link></p>
+        <h1>Welcome {currentUser.email}</h1>
+       
         <a onClick={handleLogout}>Log Out</a>
 
         </div>
