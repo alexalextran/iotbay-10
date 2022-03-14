@@ -1,12 +1,15 @@
 {
   "files": {
+    "main.css": "/alexalextran/iotbay-10/static/css/main.36581d30.css",
     "main.js": "/alexalextran/iotbay-10/static/js/main.77577952.js",
     "static/js/787.e2bab7a1.chunk.js": "/alexalextran/iotbay-10/static/js/787.e2bab7a1.chunk.js",
     "index.html": "/alexalextran/iotbay-10/index.html",
+    "main.36581d30.css.map": "/alexalextran/iotbay-10/static/css/main.36581d30.css.map",
     "main.77577952.js.map": "/alexalextran/iotbay-10/static/js/main.77577952.js.map",
     "787.e2bab7a1.chunk.js.map": "/alexalextran/iotbay-10/static/js/787.e2bab7a1.chunk.js.map"
   },
   "entrypoints": [
+    "static/css/main.36581d30.css",
     "static/js/main.77577952.js"
   ]
 }
