@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
+import background from '../assets/background.png'
 import { useAuth } from '../Contexts/AuthContext';
 
 const Loginpage = () => {
@@ -26,7 +26,7 @@ const Loginpage = () => {
     }
    
     return (
-     <section className='signup'>
+     <section className='signup' style={{backgroundImage: `url(${background})`}}>
     
         <div className='signupcard'>
         <form onSubmit={handleSubmit}>

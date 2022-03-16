@@ -52,7 +52,7 @@ html {
           flex-direction: column;
   width: clamp(400px, 30vw, 600px);
   height: 68vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .signupcard form {
