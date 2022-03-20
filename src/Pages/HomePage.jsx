@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Nav from '../Components/Nav';
 
 import { useAuth } from "../Contexts/AuthContext";
 
@@ -23,12 +24,13 @@ const Homepage = () => {
   }
 
     return (
-        <div>
+        <section>
+        <Nav />
         <h1>Welcome {currentUser.email}</h1>
        
         <a onClick={handleLogout}>Log Out</a>
 
-        </div>
+        </section>
     );
 }
 
