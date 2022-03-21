@@ -122,6 +122,8 @@ LOGIN AND SIGN UP PAGE
 }
 
 nav {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,5 +177,32 @@ nav ul li {
 
 #landing img {
   width: 30vw;
+}
+
+#featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1vw;
+}
+
+#featured .card {
+  margin: 2vw 2vw;
+  width: 22vw;
+  height: 300px;
+  border: 1em;
+  background-color: #4d4d4d;
 }
 /*# sourceMappingURL=App.css.map */

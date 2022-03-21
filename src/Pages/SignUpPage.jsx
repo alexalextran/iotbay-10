@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import background from '../assets/background.png'
 import { useAuth } from '../Contexts/AuthContext';
 
@@ -9,6 +9,7 @@ const SignUpPage = () => {
     const passwordRef = useRef()
     const { signup, currentUser } = useAuth()
     const [loading, setloading] = useState(false);
+    const navigate = useNavigate()
 
     async function handleSubmit(e){
         e.preventDefault()
@@ -16,6 +17,7 @@ const SignUpPage = () => {
         try{
             setloading(true)
          await signup(emailRef.current.value, passwordRef.current.value) 
+         navigate("/");
         } catch{
             window.alert("Failed To Create An Account!")
         }
