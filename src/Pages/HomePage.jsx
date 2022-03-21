@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Featuredproducts from '../Components/FeaturedProducts';
+import Landingpage from '../Components/LandingPage';
 import Nav from '../Components/Nav';
 
 import { useAuth } from "../Contexts/AuthContext";
@@ -26,7 +28,9 @@ const Homepage = () => {
     return (
         <section>
         <Nav />
-        <h1>Welcome {currentUser.email}</h1>
+        <Landingpage email={currentUser.email} />
+        <Featuredproducts />
+       
        
         <a onClick={handleLogout}>Log Out</a>
 
