@@ -200,9 +200,29 @@ nav ul li {
 
 #featured .card {
   margin: 2vw 2vw;
+  padding: 1em;
   width: 22vw;
   height: 300px;
   border: 1em;
   background-color: #4d4d4d;
+  position: relative;
+  opacity: 1;
+  z-index: 5;
+}
+
+#featured .card__description :hover {
+  background-color: aqua;
+}
+
+#featured .card__description {
+  -webkit-transition: all 500ms all;
+  transition: all 500ms all;
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
 }
 /*# sourceMappingURL=App.css.map */

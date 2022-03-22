@@ -106,16 +106,40 @@ LOGIN AND SIGN UP PAGE
 
 
     #featured{
+
       @include flexCenter(row);
       flex-wrap: wrap;
       padding: 1vw;
- .card{
+      
+      .card{
       margin: 2vw 2vw;
+      padding: 1em;
       width: 22vw;
       height: 300px;
       border: 1em;
       background-color: $gray;
+      position: relative;
+      opacity: 1;
+      z-index: 5;
+
+
     }
+
+    .card__description :hover{
+      background-color: aqua;
+      
+    }
+
+      .card__description{
+        transition: all 500ms all;
+        z-index: -3;
+        @include absolutefill;
+        opacity: 0;
+
+       
+      }
+    
+
 
     }
    
