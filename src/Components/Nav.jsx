@@ -1,6 +1,22 @@
 import React from 'react';
+import { FaLaptopCode } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../Contexts/AuthContext';
 
 const Nav = () => {
+
+    const { logout } = useAuth()
+    const navigate = useNavigate()
+    
+  async function handleLogout(){
+    try{
+      await logout()
+      navigate("/");
+    }catch(e){
+      console.log(e)
+      window.alert("Failed to logout!")
+    }
+  }
 
     var myNav = document.getElementsByTagName('nav');
     window.onscroll = function () { 
@@ -18,9 +34,10 @@ const Nav = () => {
     
     return (
         <nav>
-            <div>logo</div>
+            <div className='logo'><FaLaptopCode /></div>
 
             <ul>
+            <li onClick={handleLogout}>Log Out</li>
                 <li>
                     Homepage
                 </li>

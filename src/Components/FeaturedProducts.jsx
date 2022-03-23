@@ -1,6 +1,5 @@
 import React from 'react';
 import Productcard from '../UI/ProductCard';
-import router from '../assets/router.png'
 import p1 from '../assets/p1-camera.jpg'
 import p2 from '../assets/p2-router.jpg'
 import p3 from '../assets/p3-adi.jpg'

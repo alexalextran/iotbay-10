@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import Featuredproducts from '../Components/FeaturedProducts';
 import Landingpage from '../Components/LandingPage';
 import Nav from '../Components/Nav';
@@ -12,18 +12,7 @@ const Homepage = () => {
 
     const { currentUser } = useAuth()
 
-    const { logout } = useAuth()
-    const navigate = useNavigate()
-    
-  async function handleLogout(){
-    try{
-      await logout()
-      navigate("/");
-    }catch(e){
-      console.log(e)
-      window.alert("Failed to logout!")
-    }
-  }
+   
 
     return (
         <section>
@@ -32,7 +21,7 @@ const Homepage = () => {
         <Featuredproducts />
        
        
-        <a onClick={handleLogout}>Log Out</a>
+       
 
         </section>
     );

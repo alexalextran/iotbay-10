@@ -4,6 +4,8 @@
 html {
   background-color: $backgroundColor;
   font-family: $font-stack;
+  overflow-x: hidden;
+  @include scrollbar;
 }
 
 * {
@@ -13,6 +15,8 @@ html {
 }
 .nav-colored { background-color:rgb(0, 0, 0); }
 .nav-transparent { background-color:transparent;}
+
+
 
 /*  
 
@@ -33,6 +37,7 @@ LOGIN AND SIGN UP PAGE
         width: clamp(400px, 30vw, 600px);
         height:68vh;
         background-color: rgba(0,0,0,0.85);
+        color: white;
         form{
           h1{
             font-size: 2.5em
@@ -68,6 +73,8 @@ LOGIN AND SIGN UP PAGE
         }
     }
 
+    /*  NAVBAR */
+
     nav{
       transition: all 500ms;
       @include flexCustom(space-between, center, row);
@@ -75,11 +82,20 @@ LOGIN AND SIGN UP PAGE
       height: 10vh;
       position: fixed;
       color: white;
+      z-index: 99;
+
+      .logo{
+        font-size: 4em;
+        margin-left: 0.7em;
+        margin-top: 0.3em;
+        
+      }
       
 
       ul{
         display: flex;
         li{
+          @include clickable;
           margin-right: 2vw;
           list-style: none;
         }
@@ -87,23 +103,60 @@ LOGIN AND SIGN UP PAGE
     }
 
 
+    /* Landing page */
+
     #landing{
       width: 100vw;
+      height: 100vh;
       background-color: $red;
+      font-size: 1.3vw;
       @include flexCenter(row);
+    
+
+      .landing__components{
+        @include flexCenter(column);
+        width: 60%;
+      
 
       .landing__left{
-        *{
-          margin-bottom: 10px;
+         @include flexCenter(row);
+         width: 100%;
+         button{
+           margin-top: 2em;
+           @include button;
+         }
+        div{
+          width: 50%
         }
       }
 
+      .landing__row{
+        @include flexCenter(row);
+        div{
+          margin: 4em 1em;
+          @include flexCenter(column);
+        
+          :nth-child(2){
+            margin-top: 0.4em;
+            font-size: 1.6em;
+            color: white;
+          }
+        }
+      }
+   
+
 
       img{
-        width: 30vw;
+        width: 15vw;
+        transform: scale(2.5);
+        padding-left: 2em;
+        margin-right: 7em;
       }
     }
+  }
 
+
+    /* Featured Products */
 
     #featured{
 
@@ -118,7 +171,7 @@ LOGIN AND SIGN UP PAGE
       height: 300px;
       border: 1em;
       background-color: white;
-      font-size: 1.2em;
+      font-size: 1vw;
       position: relative;
       background-position: center;
      background-size: cover;
@@ -139,7 +192,7 @@ LOGIN AND SIGN UP PAGE
         transition: all 500ms;
         padding: 1em;
         line-height: 1.6;
-        font-size: 1.1em;
+        font-size: 1vw;
         opacity: 0;
         z-index: -1;
         
