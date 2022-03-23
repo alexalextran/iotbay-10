@@ -105,19 +105,19 @@ LOGIN AND SIGN UP PAGE
 }
 
 .signupcard form input::-webkit-input-placeholder {
-  color: #8a6c6c;
+  color: #c7c2c2;
 }
 
 .signupcard form input:-ms-input-placeholder {
-  color: #8a6c6c;
+  color: #c7c2c2;
 }
 
 .signupcard form input::-ms-input-placeholder {
-  color: #8a6c6c;
+  color: #c7c2c2;
 }
 
 .signupcard form input::placeholder {
-  color: #8a6c6c;
+  color: #c7c2c2;
 }
 
 .signupcard form button {
