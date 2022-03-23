@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/iotbay-10/static/css/main.36581d30.css",
-    "main.js": "/iotbay-10/static/js/main.823542fc.js",
+    "main.css": "/iotbay-10/static/css/main.d8f275d3.css",
+    "main.js": "/iotbay-10/static/js/main.8fd4ff00.js",
     "static/js/787.e2bab7a1.chunk.js": "/iotbay-10/static/js/787.e2bab7a1.chunk.js",
+    "static/media/p3-adi.jpg": "/iotbay-10/static/media/p3-adi.f6bc5e81a5c79cd4c295.jpg",
+    "static/media/p6-door.jpg": "/iotbay-10/static/media/p6-door.207712206fbfd289d1b3.jpg",
+    "static/media/p1-camera.jpg": "/iotbay-10/static/media/p1-camera.88efb63d82eb605ad4cd.jpg",
+    "static/media/landingsvg.png": "/iotbay-10/static/media/landingsvg.9ca11a30c36e05e46f3b.png",
+    "static/media/p5-light.jpg": "/iotbay-10/static/media/p5-light.cc8d552670545742b727.jpg",
+    "static/media/p2-router.jpg": "/iotbay-10/static/media/p2-router.594a5969aac8d1f50952.jpg",
+    "static/media/p4-router.jpg": "/iotbay-10/static/media/p4-router.130f77d9e4bb2e8b3b6b.jpg",
+    "static/media/background.png": "/iotbay-10/static/media/background.ad3a831ac0e3b4fcd9d8.png",
     "index.html": "/iotbay-10/index.html",
-    "main.36581d30.css.map": "/iotbay-10/static/css/main.36581d30.css.map",
-    "main.823542fc.js.map": "/iotbay-10/static/js/main.823542fc.js.map",
+    "main.d8f275d3.css.map": "/iotbay-10/static/css/main.d8f275d3.css.map",
+    "main.8fd4ff00.js.map": "/iotbay-10/static/js/main.8fd4ff00.js.map",
     "787.e2bab7a1.chunk.js.map": "/iotbay-10/static/js/787.e2bab7a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36581d30.css",
-    "static/js/main.823542fc.js"
+    "static/css/main.d8f275d3.css",
+    "static/js/main.8fd4ff00.js"
   ]
 }
