@@ -12,11 +12,13 @@ const Homepage = () => {
 
     const { currentUser } = useAuth()
 
-   
+
+
+   console.log(JSON.stringify(currentUser));
 
     return (
         <section>
-        <Nav />
+        <Nav email={currentUser.email} password={currentUser.password}/>
         <Landingpage email={currentUser.email} />
         <Featuredproducts />
        

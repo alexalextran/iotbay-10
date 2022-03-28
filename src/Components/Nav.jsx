@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLaptopCode } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../Contexts/AuthContext';
+import Modal from './Modal';
 
-const Nav = () => {
+const Nav = (props) => {
 
     const { logout } = useAuth()
     const navigate = useNavigate()
+    const [modal, setmodal] = useState(false);
     
   async function handleLogout(){
     try{
@@ -17,6 +19,8 @@ const Nav = () => {
       window.alert("Failed to logout!")
     }
   }
+
+  
 
     var myNav = document.getElementsByTagName('nav');
     window.onscroll = function () { 
@@ -33,6 +37,7 @@ const Nav = () => {
     };
     
     return (
+      <>
         <nav>
             <div className='logo'><FaLaptopCode /></div>
 
@@ -44,11 +49,15 @@ const Nav = () => {
                 <li>
                     Products
                 </li>
-                <li>
+                <li onClick={() => setmodal(true)}>
                     Manage My details
                 </li>
             </ul>
         </nav>
+        {
+          modal && <Modal email={props.email} password={props.password} setmodal={setmodal}/>
+        }
+        </>
     );
 }
 

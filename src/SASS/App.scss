@@ -211,8 +211,53 @@ LOGIN AND SIGN UP PAGE
       
 
     
-    
-
 
     }
    
+    .modal__wrapper{
+      @include absolutefill;
+      position: fixed;
+      z-index: 98;
+      background-color: rgba(0,0,0,0.65);
+      @include flexCenter(row);
+      animation: fade 1s ease-in;
+      @keyframes fade {
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1
+        }
+      }
+
+
+      .modal{
+        @include flexCenter(column);
+        background-color: white;
+        border-radius: 4%;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        font-size: 1.5em;
+      
+
+        .times{
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          z-index: 99;
+          font-size: 34px;
+          z-index: 99;
+          cursor: pointer;
+        }
+
+        @keyframes fadedown {
+          0%{
+            transform: translateY(-30px);
+          }
+          100%{
+            transform: translateY(0px);
+          }
+        }
+      }
+    }

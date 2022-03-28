@@ -32,7 +32,7 @@ const Loginpage = () => {
         <form onSubmit={handleSubmit}>
         <h1>Login</h1>
         <input placeholder='Email' required ref={emailRef}></input>
-        <input placeholder='Password Minimum 6 characters' required ref={passwordRef}></input>
+        <input type="password" placeholder='Password Minimum 6 characters' required ref={passwordRef}></input>
         <button disabled={loading}>Log In</button>
         </form>
 
