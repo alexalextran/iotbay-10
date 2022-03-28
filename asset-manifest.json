@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iotbay-10/static/css/main.d8f275d3.css",
-    "main.js": "/iotbay-10/static/js/main.8fd4ff00.js",
+    "main.css": "/iotbay-10/static/css/main.e201d0d4.css",
+    "main.js": "/iotbay-10/static/js/main.440c68b7.js",
     "static/js/787.e2bab7a1.chunk.js": "/iotbay-10/static/js/787.e2bab7a1.chunk.js",
     "static/media/p3-adi.jpg": "/iotbay-10/static/media/p3-adi.f6bc5e81a5c79cd4c295.jpg",
     "static/media/p6-door.jpg": "/iotbay-10/static/media/p6-door.207712206fbfd289d1b3.jpg",
@@ -12,12 +12,12 @@
     "static/media/p4-router.jpg": "/iotbay-10/static/media/p4-router.130f77d9e4bb2e8b3b6b.jpg",
     "static/media/background.png": "/iotbay-10/static/media/background.ad3a831ac0e3b4fcd9d8.png",
     "index.html": "/iotbay-10/index.html",
-    "main.d8f275d3.css.map": "/iotbay-10/static/css/main.d8f275d3.css.map",
-    "main.8fd4ff00.js.map": "/iotbay-10/static/js/main.8fd4ff00.js.map",
+    "main.e201d0d4.css.map": "/iotbay-10/static/css/main.e201d0d4.css.map",
+    "main.440c68b7.js.map": "/iotbay-10/static/js/main.440c68b7.js.map",
     "787.e2bab7a1.chunk.js.map": "/iotbay-10/static/js/787.e2bab7a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8f275d3.css",
-    "static/js/main.8fd4ff00.js"
+    "static/css/main.e201d0d4.css",
+    "static/js/main.440c68b7.js"
   ]
 }
